@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>JavaScript 5</title>
+</head>
+<body> 
+    <h2>crear contraseña </h2>
+    <label>contraseña:</label>
+    <input type="password" id="clave1">
+    <br> <br>
+    <label>repetir contraseña:</label>
+    <input type="password" id="clave2"> 
+    <br> <br> 
+
+    <button type="button" onclick="comparar()">comparar</button>
+    <script>
+        
+        function comparar() {
+            let clave1 = document.getElementById("clave1").value;
+            let clave2 = document.getElementById("clave2").value;
+
+            if (clave1 === clave2) {
+                alert("Las contraseñas coinciden.");
+            } else {
+                alert("Las contraseñas no coinciden.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>javascript6</title>
+    </head>
+    <body> 
+        <h2> tipos de pizzas </h2>
+        <select id="pizzas" 
+            <option value="500">jamon y queso</option>
+            <option value="600">muzzarella</option>
+            <option value="700">morrones</option>
+        </select>
+        <br> <br> 
+        <button type="button" onclick="mostrarPrecio()">mostrar precio</button>
+        <br> <br> 
+        <input type="text" id="precio" readonly>
+        <script> 
+            function mostrarPrecio() { 
+                let pizza = document.getElementById("pizzas"); 
+                let precio = pizza.options[pizza.selectedIndex].value; 
+                document.getElementById("precio").value = precio; 
+            }
+        </script>
+    </body>
+</html>

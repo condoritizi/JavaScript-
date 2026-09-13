@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 2</title>
+    </head>
+    <body>
+        <h2>JavaScript 2</h2>
+        <input type="text" id="numero" placeholder="Ingrese un número">
+        <button type="button" onclick="calcularcubo()">Calcularcubo</button>
+        <script>
+            function calcularcubo() {
+                let numero = document.getElementById("numero").value;
+                let cubo = numero * numero * numero;
+                alert("El cubo de " + numero + " es: " + cubo);
+            }
+        </script>
+    </body>
+</html>

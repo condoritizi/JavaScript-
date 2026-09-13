@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>JavaScript 4</title>
+    </head> 
+    <body> 
+        <h2>JavaScript 4</h2>
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="apellido" placeholder="apellido">
+        <button type="button" onclick="concatenar()">Concatenar</button>
+        <br> <br>
+        <input type="text" id="resultado" placeholder="resultado">
+        <script>
+            function concatenar() {
+                let nombre = document.getElementById("nombre").value;
+                let apellido = document.getElementById("apellido").value;
+                let resultado = nombre + " " + apellido;
+                document.getElementById("resultado").value = resultado;
+            }
+        </script>
+    </body>
+</html>
